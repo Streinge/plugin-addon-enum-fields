@@ -5,7 +5,7 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Addon\EnumFields;
+namespace SalesRender\Plugin\Addon\EnumFields;
 
 
 use XAKEPEHOK\EnumHelper\EnumHelper;

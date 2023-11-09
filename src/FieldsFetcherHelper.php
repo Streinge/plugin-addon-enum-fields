@@ -1,6 +1,6 @@
 <?php
 
-namespace Leadvertex\Plugin\Addon\EnumFields;
+namespace SalesRender\Plugin\Addon\EnumFields;
 
 abstract class FieldsFetcherHelper
 {

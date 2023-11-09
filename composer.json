@@ -1,27 +1,27 @@
 {
-  "name": "leadvertex/plugin-addon-enum-fields",
-  "description": "LeadVertex plugin component provide implementation of ValuesListInterface for fields",
+  "name": "salesrender/plugin-addon-enum-fields",
+  "description": "SalesRender plugin component provide implementation of ValuesListInterface for fields",
   "type": "library",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
       "name": "Timur Kasumov aka XAKEPEHOK",
-      "email": "support@leadvertex.com"
+      "email": "support@salesrender.com"
     }
   ],
   "require": {
     "php": ">=7.4",
     "ext-json": "*",
-    "leadvertex/plugin-component-form": "^0.10.6",
+    "salesrender/plugin-component-form": "^0.10.6",
     "xakepehok/enum-helper": "^0.1.0",
-    "leadvertex/plugin-component-access": "^0.1.8",
-    "leadvertex/plugin-component-api-client": "^0.6.0",
-    "leadvertex/plugin-component-translations": "^0.1.2"
+    "salesrender/plugin-component-access": "^0.1.8",
+    "salesrender/plugin-component-api-client": "^0.6.0",
+    "salesrender/plugin-component-translations": "^0.1.2"
   },
   "autoload": {
     "psr-4": {
-      "Leadvertex\\Plugin\\Addon\\EnumFields\\": "src/"
+      "SalesRender\\Plugin\\Addon\\EnumFields\\": "src/"
     }
   }
 }

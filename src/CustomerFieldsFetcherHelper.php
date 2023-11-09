@@ -5,11 +5,11 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Addon\EnumFields;
+namespace SalesRender\Plugin\Addon\EnumFields;
 
 
-use Leadvertex\Plugin\Components\Access\Token\GraphqlInputToken;
-use Leadvertex\Plugin\Components\ApiClient\ApiClient;
+use SalesRender\Plugin\Components\Access\Token\GraphqlInputToken;
+use SalesRender\Plugin\Components\ApiClient\ApiClient;
 
 class CustomerFieldsFetcherHelper extends FieldsFetcherHelper
 {
