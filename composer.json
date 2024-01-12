@@ -13,7 +13,7 @@
   "require": {
     "php": ">=7.4",
     "ext-json": "*",
-    "salesrender/plugin-component-form": "^0.10.6",
+    "salesrender/plugin-component-form": "^0.11.0",
     "xakepehok/enum-helper": "^0.1.0",
     "salesrender/plugin-component-access": "^0.1.8",
     "salesrender/plugin-component-api-client": "^0.6.0",
