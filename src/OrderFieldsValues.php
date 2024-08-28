@@ -14,9 +14,9 @@ use SalesRender\Plugin\Components\Translations\Translator;
 class OrderFieldsValues extends StaticValues
 {
 
-    public function __construct(array $types)
+    public function __construct(array $types, array $extraValues = [])
     {
-        $values = [];
+        $values = $extraValues;
         foreach (OrderFieldsFetcherHelper::getTypes($types) as $type => $fields) {
 
             $group = OrderFieldTypesRegistry::switchCase($type, [
