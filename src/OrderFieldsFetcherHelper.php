@@ -28,17 +28,19 @@ class OrderFieldsFetcherHelper extends FieldsFetcherHelper
 
             $response = $client->query("
                 query {
-                    orderFieldsFetcher(filters: {include: { archived: false }}) {
-                        fields {
-                            name
-                            label
-                            __typename
+                    fields {
+                        orderFieldsFetcher(filters: {include: { archived: false }}) {
+                            fields {
+                                name
+                                label
+                                __typename
+                            }
                         }
                     }
                 }
             ", []);
 
-            self::$data = $response->getData()['orderFieldsFetcher']['fields'];
+            self::$data = $response->getData()['fields']['orderFieldsFetcher']['fields'];
         }
 
         return self::$data;

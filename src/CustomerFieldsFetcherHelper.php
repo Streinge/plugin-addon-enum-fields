@@ -28,17 +28,19 @@ class CustomerFieldsFetcherHelper extends FieldsFetcherHelper
 
             $response = $client->query("
                 query {
-                    customerFieldsFetcher(filters: {include: { archived: false }}) {
-                        fields {
-                            name
-                            label
-                            __typename
+                    fields {
+                        customerFieldsFetcher(filters: {include: { archived: false }}) {
+                            fields {
+                                name
+                                label
+                                __typename
+                            }
                         }
                     }
                 }
             ", []);
 
-            self::$data = $response->getData()['customerFieldsFetcher']['fields'];
+            self::$data = $response->getData()['fields']['customerFieldsFetcher']['fields'];
         }
 
         return self::$data;
